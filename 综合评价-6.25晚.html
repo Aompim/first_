@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>综合评价-6.25晚.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7"><em><strong>综合评价</strong></em></h1>
+<hr>
+<p>$\qquad$综合评价是运用<strong>多个指标</strong>对多个<strong>多个参评单位</strong>进行评价的方法，称为<strong>多变量综合评价方法</strong>，又称<strong>综合评价法</strong>，其基本思想是将多个指标转化为一个能过反映综合情况的指标进行评价。</p>
+<p>$\mathfrak{Remark:}$</p>
+<pre class="hljs"><code><div>
+</div></code></pre>
+<p>$i),$评价过程不是逐个指标顺次完成，是多个指标评价同时完成。</p>
+<p>$ii),$根据指标的重要性来赋予权重。</p>
+<p>$iii),$评价结果不是具有具体含义的统计指标，是以指数或分值表示参评单位的“综合状况”的排序。</p>
+<p>$iv),$基本环节</p>
+<p><img src="https://s2.loli.net/2022/06/26/Khy9XF7JSRLEvBH.png" alt="avatar">
+<img src="https://s2.loli.net/2022/06/26/Rkz91BAvTpDdncs.png" alt="avatar"></p>
+<p>$v),$数据处理(指标)</p>
+<ul>
+<li>指标类型</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/06/27/VBEj7vmYfkD1Cse.png" alt="avatar"></p>
+<ul>
+<li>定性指标的量化(评分法)</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/06/27/T6zQBZXevqygSY9.png" alt="avatar"></p>
+<p>例子:</p>
+<p><img src="https://s2.loli.net/2022/06/27/OFlbhiaPjznmtZK.png" alt="avatar"></p>
+<p>我们用矩阵来记录(称为原始决策矩阵)</p>
+<p><img src="https://s2.loli.net/2022/06/27/alQFrSCfkiLpjbc.png" alt="avatar"></p>
+<p>以下的讨论都是基于原始决策矩阵 $\mathbf{(a_{ij})_{m\times n}}$ ， $m$ 为样本数， $n$ 为指标数。</p>
+<ul>
+<li>
+<p>指标一致化(化为极大型对同一类数据(列)进行处理)</p>
+<ul>
+<li>极小型指标 $a_{ij}$</li>
+</ul>
+<blockquote>
+<p>$a_{j}^{max}$ 为 $j$ 列的最大值
+令 $b_{ij}=a_{j}^{max}-a_{ij}(a_{j}^{max}&gt;0) $ 或
+$ b_{ij}=\dfrac{1}{a_{ij}}(a_{ij}&gt;0) $
+$ b_{i,j} $ 为极大型指标</p>
+</blockquote>
+<ul>
+<li>中间型指标</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>$ M_{k}=max(a_{1k},a_{2k},..,a_{mk})\
+m_{k}=min(a_{1k},a_{2k},..,a_{mk}) $</p>
+<p>$$
+b_{ik}=\begin{cases}\dfrac{2(a_{ik}-m_{k})}{M_{k}-m_{k}},&amp;x\in[\dfrac{m_{k}+M_{k}}{2},M_{k}]\\dfrac{2(M_{k}-a_{ik})}{M_{k}-m_{k}},&amp;x\in[\dfrac{m_{k}+M_{k}}{2},M_{k}]\end{cases},i=1,2,...,n
+$$</p>
+</blockquote>
+<ul>
+<li>
+<p>指标标准化(使得不同指标之间(不同列)之间可以比较)</p>
+<ul>
+<li>向量归一化</li>
+</ul>
+<blockquote>
+<p>$x=(x_{1},x_{2},...,x_{n})$
+$x_{0}=(\dfrac{x_{1}}{\sum_{k=1}^{n}x_{k}},\dfrac{x_{2}}{\sum_{k=1}^{n}x_{k}},...,\dfrac{x_{n}}{\sum_{k=1}^{n}x_{k}})$</p>
+</blockquote>
+<ul>
+<li>极差变换法</li>
+</ul>
+<blockquote>
+<p>$ M_{j}=max(a_{1j},a_{2j},..,a_{mj})\
+m_{j}=min(a_{1j},a_{2j},..,a_{mj}) $
+对正项指标$a_{ij}$
+$x_{ij}=\dfrac{a_{ij}-m_{j}}{M_{j}-m_{j}}$
+对负项指标$a_{ij}$
+$x_{ij}=\dfrac{M_{j}-a_{ij}}{M_{j}-m_{j}}$
+得到的$x_{ij}\in[0,1]$</p>
+</blockquote>
+<ul>
+<li>线性比例变换法</li>
+</ul>
+<blockquote>
+<p>$a_{i,j}\geq 0$
+对正项指标$a_{ij}$
+$x_{ij}=\dfrac{a_{ij}}{M_{j}}$
+对负项指标$a_{ij}$
+$x_{ij}=\dfrac{m_{j}}{a_{ij}}$
+$m,n\ne 0$
+得到的$x_{ij}\in[0,1]$</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="%E5%B8%B8%E8%A7%81%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7%E6%96%B9%E6%B3%95"><em>常见综合评价方法</em></h4>
+<ul>
+<li>
+<p>线性加权综合评价法</p>
+<blockquote>
+<p>加权函数 $ y=\sum_{k=1}^{n}w_{k}x_{k} $ 作为评价模型</p>
+<blockquote>
+<p>$ \mathfrak{Remark}: $ 适用于 $n$ 个独立的指标，但权重系数对评价影响较大</p>
+</blockquote>
+</blockquote>
+</li>
+<li>
+<p>非线性加权综合评价法</p>
+<blockquote>
+<p>加权函数$\prod_{k=1}^{n}x_{k}^{w_{k}}$作为评价模型</p>
+<blockquote>
+<p>$\mathfrak{Remark}:$适用于$n$个的指标有较强的相关关系,要求$x_{k}\geq 1$突出指标之间的一致性，即平衡评价指标值较小的指标的影响的作用，权重影响较小而对指标值的大小较敏感</p>
+</blockquote>
+</blockquote>
+</li>
+<li>
+<p>逼近理想点法( $\mathbf{TOPSIS}$ )</p>
+</li>
+</ul>
+<blockquote>
+<p>通过对每个样本与理想解的距离来给出评价
+对于$m$个样本，$n$个指标，每个指标在评价体系下都有指标值，组成了一个矩阵$\mathbf{A_{m\times n}}$,将其规范化(一致化，标准化)为$\mathbf{R_{m\times n}}$,有权重$\mathbf{w}=(w_{1},...,w_{n})$,有加权规范矩阵
+$\mathbf{Z_{m\times n}}=(r_{ij}*w_{j})<em>{m\times n}=(\mathbf{z</em>{1}},\mathbf{z_{2}},...,\mathbf{z_{m}})^{\mathbf{T}}$
+$(\mathbf{z_{1}},\mathbf{z_{2}},...,\mathbf{z_{m}})^{\mathbf{T}}$ 是对 $\mathbf{Z_{m\times n}}$ 行分块，每个样本对应于一个行向量</p>
+</blockquote>
+<blockquote>
+<p>确定正理想解 $(PIS)$ 和负理想解 $(NIS)$</p>
+</blockquote>
+<p><img src="https://s2.loli.net/2022/06/27/3AjvCLHsTe5p2XI.png" alt="avatar"></p>
+<blockquote>
+<p>分别为取每列最大项，最小项组成的行向量</p>
+</blockquote>
+<blockquote>
+<p>综合评价值为</p>
+<blockquote>
+<p>$L_{k}=\dfrac{D(\mathbf{z_{k}},NIS)}{D(\mathbf{z_{k}},NIS)+D(\mathbf{z_{k}},PIS)}$
+$\mathfrak{Remark:}$
+$D(\mathbf{x},\mathbf{y})$为$\mathbf{x},\mathbf{y}$的欧氏距离
+$L_{K}\in[0,1]$
+$L_{K}\in[0,1]$ 越接近 $1$ 说明越优，越接近 $0$ 说明越优劣。</p>
+</blockquote>
+</blockquote>
+<p>$\mathfrak{Remark}:$此方法对原始数据利用充分，对样本含量，指标数没有要求，可比性较好</p>
+<h4 id="%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7%E6%96%B9%E6%B3%95"><em>模糊综合评价方法</em></h4>
+<p><img src="https://s2.loli.net/2022/06/27/hrXTMCwvOdkcqLR.png" alt="avatar"></p>
+<h6 id="%E4%BE%8B%E5%AD%90">例子</h6>
+<p><img src="https://s2.loli.net/2022/06/27/5PcNaAkrjp9zUC6.png" alt="avatar"></p>
+<h6 id="%E6%A6%82%E5%BF%B5">概念</h6>
+<p><img src="https://s2.loli.net/2022/06/27/oPFW8AbzBQ6iCtq.png" alt="avatar"></p>
+<blockquote>
+<p>例子
+<img src="https://s2.loli.net/2022/06/27/9LswyABOJiFnCPU.png" alt="avatar"></p>
+</blockquote>
+<p>当涉及到的指标较少，运用 <em><strong>一级模糊综合评判</strong></em> ，当指标丰富的时候运用 <em><strong>多层次模糊综合评判</strong></em> ,以下仅仅涉及  <em><strong>一级模糊综合评判</strong></em> 。</p>
+<h6 id="%E4%B8%80%E7%BA%A7%E6%A8%A1%E7%B3%8A%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7%E6%AD%A5%E9%AA%A4">一级模糊综合评价步骤</h6>
+<p><img src="https://s2.loli.net/2022/06/27/tSHsnDiCfl7MJm5.png" alt="avatar"></p>
+<p><img src="https://s2.loli.net/2022/06/27/cN6FJHmtTLrAxVe.png" alt="avatar"></p>
+<blockquote>
+<blockquote>
+<p>例子
+<img src="https://s2.loli.net/2022/06/27/EosIWr45QdtMuXp.png" alt="avatar"></p>
+</blockquote>
+</blockquote>
+<h4 id="%E7%81%B0%E8%89%B2%E7%B3%BB%E7%BB%9F%E7%90%86%E8%AE%BA"><em>灰色系统理论</em></h4>
+<h6 id="%E6%A6%82%E5%BF%B5%E4%BB%8B%E7%BB%8D">概念介绍</h6>
+<p><img src="https://s2.loli.net/2022/06/27/WG43kDqmNbYrRwh.png" alt="avatar"></p>
+<blockquote>
+<p>主要讨论 <em><strong>灰色关联分析</strong></em></p>
+</blockquote>
+<h6 id="%E7%81%B0%E8%89%B2%E5%85%B3%E8%81%94%E5%88%86%E6%9E%90">灰色关联分析</h6>
+<blockquote>
+<p>主要是通过各个对象(比较数列)与一个参考的对象(参考数列)的比较（关联系数），再结合每个指标的权重得到评分（关联度）</p>
+</blockquote>
+<ul>
+<li>具体步骤</li>
+</ul>
+<blockquote>
+<p>设有 $m$ 个评价对象， $n$ 个评价指标， 每个指标变量 $y_{j},j=1,...,n$ 都是效益型指标变量(除此之外，还可能有成本型)</p>
+</blockquote>
+<p><img src="https://s2.loli.net/2022/06/27/elMXpn3fvrm9bL6.png" alt="avatar"></p>
+<ul>
+<li>*如果没必要(如果量纲一致或者都是相同标准的评分，如下面的例子)也不必规范化</li>
+</ul>
+<blockquote>
+<p>二. 选取参考数列
+$\mathbf{X_{0}}=(x_{0}(1),x_{0}(2),...,x_{0}(n))^{T}$ ,一般取 $x_{0}(j)=max{x_{i}(j)},j=1,...,n$ ，即每个指标里最好的值,除此之外，还可以指定一个参考数列。</p>
+</blockquote>
+<blockquote>
+<p>三. 形成如下矩阵
+<img src="https://s2.loli.net/2022/06/27/A3cebxl28Rsh6D4.png" alt="avatar"></p>
+</blockquote>
+<blockquote>
+<p>四. 计算关联系数
+<img src="https://s2.loli.net/2022/06/27/B92TOyIP1QJvXGl.png" alt="avatar"></p>
+<blockquote>
+<p>$\mathfrak{Remark}<img class="emoji" alt="unamused" src="data:image/png;base64,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" />
+<img src="https://s2.loli.net/2022/06/27/8OBCqEwYcbjuIH2.png" alt="avatar">
+两级最小差和两级最大差是确定的，分别为每个指标，每个对象与参考数列差的绝对值的最小值和最大值
+得到的关联系数也可以拼成一个和上面记录数据的矩阵同形的矩阵</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>五. 六.
+<img src="https://s2.loli.net/2022/06/27/4yAYBSjzrEsTaef.png" alt="avatar"></p>
+<blockquote>
+<p>每个对象对应一个关联度，是综合评价的度量</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>七.
+<img src="https://s2.loli.net/2022/06/27/RC7WM982n4K3gqQ.png" alt="avatar"></p>
+</blockquote>
+<ul>
+<li>例子</li>
+<li>软件下载</li>
+</ul>
+<h4 id="%E5%8A%A8%E6%80%81%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7"><em>动态综合评价</em></h4>
+<h6 id="%E4%BB%8B%E7%BB%8D">介绍</h6>
+<p><img src="https://s2.loli.net/2022/06/27/koSEDd7BHXIpYV8.png" alt="avatar">
+<img src="https://s2.loli.net/2022/06/27/nNAsfJlv5ueWS6M.png" alt="avatar"></p>
+<h6 id="%E4%B8%80%E8%88%AC%E6%96%B9%E6%B3%95">一般方法</h6>
+<p><img src="https://s2.loli.net/2022/06/27/aPEnWOFLkpUD2Mr.png" alt="avatar"></p>
+<ul>
+<li>加权函数的构造</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/06/27/jBRDduenVxSpWEr.png" alt="avatar"></p>
+<ul>
+<li>模型</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/06/27/XEmsGvnhTed7I5W.png" alt="avatar"></p>
+<h6 id="%E4%BE%8B%E5%AD%90">例子</h6>
+<p><img src="https://s2.loli.net/2022/06/27/W4vROojLfDUB7xi.png" alt="avatar"></p>
+
+</body>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });</script>
+</html>
